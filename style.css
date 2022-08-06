@@ -44,7 +44,7 @@ header {
 }
 
 .logo {
-    font-size: 5rem;
+    font-size: 2em;
     font-weight: bolder;
     -webkit-text-stroke: 4px #000;
     text-transform: uppercase;
