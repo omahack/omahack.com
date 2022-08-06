@@ -1,0 +1,131 @@
+/*
+Color scheme:
+Dark red: B31264
+Gold: FFE419
+Pink: FF0082
+Blue: 00E1FF
+Dark blue: 099FB3
+*/
+
+body {
+    margin: 0 auto;
+    /* background-color: #f1f0ef; */
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url("./images/omaha-bg-2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: #e9235e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFE419;
+}
+
+a:visited {
+    color: #ce008e;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    /* position: fixed; */
+    width: 100%;
+    /* background-color: #fff; */
+    height: 2.8rem;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: bolder;
+    -webkit-text-stroke: 4px #000;
+    text-transform: uppercase;
+    /* text-shadow: 12px 1px 2px #fff; */
+    animation: shadow-animate 4s infinite;
+}
+
+@keyframes shadow-animate {
+    0% {
+        text-shadow: 0px 1px 2px #fff;
+    }
+
+    50% {
+        text-shadow: 12px 1px 2px #fff;
+    }
+
+    100% {
+        text-shadow: 0px 1px 2px #fff;
+    }
+}
+
+.logo-oma {
+    color: #00E1FF;
+}
+
+.logo-ha {
+    color: #FF0082;
+    animation: logo-animate 4s infinite;
+}
+
+.logo-ck {
+    color: #FF0082;
+}
+
+@keyframes logo-animate {
+    0% {
+        color: #FF0082;
+        text-shadow: 0px 1px 2px #fff;
+    }
+
+    50% {
+        color: #00E1FF;
+        text-shadow: 12px 1px 2px #fff;
+    }
+
+    100% {
+        color: #FF0082;
+        text-shadow: 0px 1px 2px #fff;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav>div {
+    padding: 0 .5rem;
+}
+
+main {
+    margin: auto;
+    max-width: 640px;
+    padding: 3.4rem 1rem;
+}
+
+/* h1, h2, h3 {
+  } */
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+div.content {
+    margin: 4em;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2em solid #fff;
+}
