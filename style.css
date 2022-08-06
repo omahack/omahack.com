@@ -36,11 +36,11 @@ a:visited {
 
 header {
     text-align: center;
-    padding: 2rem;
     /* position: fixed; */
     width: 100%;
     /* background-color: #fff; */
     height: 2.8rem;
+    margin: 2rem 0;
 }
 
 .logo {
