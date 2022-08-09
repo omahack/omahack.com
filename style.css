@@ -10,11 +10,11 @@ Dark blue: 099FB3
 body {
     margin: 0 auto;
     /* background-color: #f1f0ef; */
-    font-family:Arial, Helvetica, sans-serif;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url("./images/omahack-bg.jpg") no-repeat center center fixed; 
+    background: url("./images/omahack-bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,8 +42,8 @@ header {
     /* position: fixed; */
     width: 100%;
     /* background-color: #fff; */
-    height: 2.8rem;
-    margin: 2rem 0;
+    height: 8em;
+    margin: 2em 0;
 }
 
 .logo {
@@ -55,13 +55,54 @@ header {
     font-style: italic;
 }
 
+@media only screen and (max-width: 700px) {
+    header {
+        height: 6em;
+    }
+
+    .logo {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 4em;
+    }
+
+    .logo {
+        font-size: 3em;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    header {
+        height: 2.5em;
+    }
+
+    .logo {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header {
+        margin: 0 0 2em;
+    }
+
+    .logo {
+        font-size: 8em;
+    }
+}
+
 @keyframes shadow-animate {
     0% {
         text-shadow: 0px 1px 2px #fff;
     }
 
     50% {
-        text-shadow: 12px 1px 2px #fff;
+        text-shadow: 22px 1px 2px #fff;
     }
 
     100% {
@@ -90,7 +131,7 @@ header {
 
     50% {
         color: #00E1FF;
-        text-shadow: 12px 1px 2px #fff;
+        text-shadow: 22px 1px 2px #fff;
     }
 
     100% {
@@ -114,6 +155,15 @@ div.content {
     border: 1em solid #fff;
 }
 
+@media only screen and (max-width: 600px) {
+    div.content {
+        margin: 1em;
+        padding: 1em;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+    }
+}
+
 .splash-columns {
     display: flex;
     flex-direction: row;
@@ -124,6 +174,12 @@ div.content {
 .splash-column {
     flex: 33.33%;
     text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .splash-column {
+        flex: 100%;
+    }
 }
 
 .splash-icon {
@@ -138,4 +194,3 @@ div.content {
 .splash-single {
     text-align: center;
 }
-
