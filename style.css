@@ -50,6 +50,7 @@ header {
     text-transform: uppercase;
     /* text-shadow: 12px 1px 2px #fff; */
     animation: shadow-animate 4s infinite;
+    font-style: italic;
 }
 
 @keyframes shadow-animate {
@@ -110,3 +111,21 @@ div.content {
     background: rgba(255, 255, 255, 0.9);
     border: 1em solid #fff;
 }
+
+.splash-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.splash-column {
+    flex: 33.33%;
+}
+
+.splash-icon {
+    font-size: 32px;
+    align-items: center;
+}
+
+
