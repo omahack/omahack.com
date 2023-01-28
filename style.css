@@ -142,11 +142,30 @@ header {
 }
 
 h1 {
-    font-size: 1.4em;
+    font-size: 1.8em;
+    text-align: center;
+    color: #000;
+    -webkit-text-stroke: 0.7px #FF0082;
+    -webkit-text-fill-color: #000;
+    text-shadow: 0px 0px 8px #00E1FF;
 }
+
+/* h1.section-header {
+    font-size: 2.0em;
+    text-align: center;
+    color: #000;
+    -webkit-text-stroke: 1px #FF0082;
+    -webkit-text-fill-color: #000;
+    text-shadow: 0px 0px 8px #00E1FF;
+} */
 
 h2 {
     font-size: 1.1em;
+}
+
+h3 {
+    font-size: 0.95em;
+    /* margin-top: -10px; */
 }
 
 div.content {
