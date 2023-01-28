@@ -168,8 +168,16 @@ h3 {
     /* margin-top: -10px; */
 }
 
+.text-emphasis {
+    font-weight: 600;
+    -webkit-text-stroke: 0.25px #FF0082;
+    -webkit-text-fill-color: #000;
+    text-shadow: 0px 0px 8px #00E1FF;
+}
+
 div.content {
-    margin: 1em;
+    max-width: 1000px;
+    margin: 1em auto;
     padding: 1em;
     background: rgba(255, 255, 255, 0.9);
     border: 1em solid #fff;
@@ -177,7 +185,6 @@ div.content {
 
 @media only screen and (max-width: 600px) {
     div.content {
-        margin: 1em;
         padding: 1em;
         background: rgba(255, 255, 255, 0.9);
         border: none;
